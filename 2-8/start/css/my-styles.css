@@ -2,7 +2,7 @@
 ================================ */
 
 body {
-	padding-top: 70px;
+	padding-top: 50px;
 }
 .container {
 	max-width: 1000px;
@@ -28,3 +28,15 @@ body {
 
 /* Carousel
 ================================ */
+.carousel-indicators {
+	bottom: 0;
+}
+
+.carousel-indicators .active {
+	background-color: #222;
+}
+
+.carousel-indicators li {
+	background-color: #222;
+}
+
