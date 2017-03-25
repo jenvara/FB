@@ -57,7 +57,7 @@
             <p class="btn-group">
               <a class="btn btn-success btn-lg" href="#">Download the app</a>
               <!-- The "data-toggle" attribute is needed to activate the modal. -->
-              <a class="btn btn-default btn-lg hidden-xs" data-toggle="modal" href="#">Text me the link</a>
+              <a class="btn btn-default btn-lg hidden-xs" data-toggle="modal" href="#textModal">Text me the link</a>
               <!-- End modal trigger -->
             </p>           
           </div>
@@ -79,9 +79,39 @@
       <a class="right carousel-control" href="#myCarousel" data-slide="next">
         <span class="icon-next"></span>
       </a>      
-    </div> <!-- End Carousel -->
+    </div><!-- Main content-->
 
-    <!-- Main content-->
+<!-- Modal -->
+<div class="modal fade" id="textModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">We'll Text You the Link!</h4>
+        <div class="modal-body">
+          <form class="form-inline">
+            <div class="form-group">
+              <label class="sr-only" for="mobilePhone">Mobile Phone</label>
+              <input type="tel" class="form-control" id="mobilePhone" placeholder="Mobile Phone">
+            </div>
+              <div class="form-group">
+                <select class="form-control">
+                  <option>iOS</option>
+                  <option>Android</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary" data-dismiss="modal">Send me link</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Modal -->
+
+<!-- Media Content -->
     <div class="container">
       <div class="row">
         <div class="col-sm-4">
